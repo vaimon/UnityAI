@@ -756,6 +756,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1970792111334935124, guid: 8af39614f7557054abca613639eee46f, type: 3}
+      propertyPath: count.x
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3970324036561643706, guid: 8af39614f7557054abca613639eee46f, type: 3}
       propertyPath: m_Name
       value: GameEnv (8)

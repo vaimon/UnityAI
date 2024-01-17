@@ -231,7 +231,6 @@ MonoBehaviour:
   buttonsDistributor: {fileID: 2217175152903168023}
   boxDistributor: {fileID: 3552187568563327776}
   agentsDistributor: {fileID: 1970792111334935124}
-  door: {fileID: 9184022481970391131}
   goal: {fileID: 2329129879776745668}
 --- !u!1 &4380041827799385087
 GameObject:
@@ -296,9 +295,8 @@ GameObject:
   - component: {fileID: 8963474452949575408}
   - component: {fileID: 8419878845432472423}
   - component: {fileID: 5200981658811713552}
-  - component: {fileID: 9184022481970391131}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Wall
   m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -390,34 +388,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9184022481970391131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417949985611401707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf6b7fc29e570504c90aed4e6749daf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 224377330806734531}
-  onDoorOpen:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5643912208897456261}
-        m_TargetAssemblyTypeName: GameEnvController, Assembly-CSharp
-        m_MethodName: OnGoalTriggered
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &4810269209036627071
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,17 +894,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f1f9b47d3cf3eb4a8930d6c3d258d0e, type: 3}
---- !u!114 &224377330806734531 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4637166413021281441, guid: 8f1f9b47d3cf3eb4a8930d6c3d258d0e, type: 3}
-  m_PrefabInstance: {fileID: 4848023530109125218}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6189987615132458648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03ea40ffd697c342a3239d236b0c89c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1461015377926477939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6269347166793439761, guid: 8f1f9b47d3cf3eb4a8930d6c3d258d0e, type: 3}

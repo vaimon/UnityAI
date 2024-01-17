@@ -8,7 +8,7 @@ public enum ButtonStates {
     Pressed
 }
 
-public class Button : DoorActivator
+public class Button : ButtonActivator
 {
     MeshRenderer mesh;
     ButtonStates state = ButtonStates.Unpressed;

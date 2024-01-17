@@ -3,12 +3,16 @@ using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using static UnityEngine.GraphicsBuffer;
 using Unity.MLAgents.Sensors;
+using UnityEngine.Events;
 
 public class AgentPusher : Agent
 {
     float m_LateralSpeed = 0.15f;
     float m_ForwardSpeed = 0.5f;
 
+    public UnityEvent onMaxStepsReached { get; } = new UnityEvent();
+
+    private const int _maxSteps = 47000;
 
     [HideInInspector]
     public Rigidbody agentRb;
@@ -66,6 +70,12 @@ public class AgentPusher : Agent
 
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
+        if(StepCount > _maxSteps)
+        {
+            onMaxStepsReached.Invoke();
+            return;
+        }
+
         MoveAgent(actionBuffers.DiscreteActions);
 
         AddReward(-0.0001f);

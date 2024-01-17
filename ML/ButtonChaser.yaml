@@ -1,6 +1,6 @@
 behaviors:
   ButtonChaser:
-    trainer_type: ppo
+    trainer_type: poca
     hyperparameters:
       batch_size: 128
       buffer_size: 4096
@@ -23,4 +23,4 @@ behaviors:
     keep_checkpoints: 5
     max_steps: 1000000
     time_horizon: 1024
-    summary_freq: 12000
+    summary_freq: 10000

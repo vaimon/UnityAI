@@ -1,7 +1,7 @@
 default_settings: null
 behaviors:
   ButtonChaser:
-    trainer_type: ppo
+    trainer_type: poca
     hyperparameters:
       batch_size: 128
       buffer_size: 4096
@@ -10,7 +10,6 @@ behaviors:
       epsilon: 0.2
       lambd: 0.95
       num_epoch: 3
-      shared_critic: false
       learning_rate_schedule: linear
       beta_schedule: linear
       epsilon_schedule: linear
@@ -40,7 +39,7 @@ behaviors:
     even_checkpoints: false
     max_steps: 1000000
     time_horizon: 1024
-    summary_freq: 12000
+    summary_freq: 10000
     threaded: false
     self_play: null
     behavioral_cloning: null
@@ -69,7 +68,7 @@ checkpoint_settings:
   run_id: chaserAttempt3
   initialize_from: null
   load_model: false
-  resume: false
+  resume: true
   force: false
   train_model: false
   inference: false
