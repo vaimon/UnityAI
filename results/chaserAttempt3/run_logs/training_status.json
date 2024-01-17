@@ -1,0 +1,29 @@
+{
+    "ButtonChaser": {
+        "checkpoints": [
+            {
+                "steps": 119808,
+                "file_path": "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-119808.onnx",
+                "reward": null,
+                "creation_time": 1705509044.9677114,
+                "auxillary_file_paths": [
+                    "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-119808.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 119808,
+            "file_path": "results\\chaserAttempt3\\ButtonChaser.onnx",
+            "reward": null,
+            "creation_time": 1705509044.9677114,
+            "auxillary_file_paths": [
+                "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-119808.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0.dev0",
+        "torch_version": "2.1.2+cpu"
+    }
+}

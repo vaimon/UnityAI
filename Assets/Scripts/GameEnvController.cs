@@ -7,6 +7,7 @@ public class GameEnvController : MonoBehaviour
 {
     public int buttonsOnEpisode = 4;
     public int boxesOnEpisode = 3;
+    public int agentsOnEpisode = 1;
 
     private Agent agent;
     public GridedDistributor buttonsDistributor;
@@ -29,11 +30,12 @@ public class GameEnvController : MonoBehaviour
             activators[i] = buttons[i].GetComponent<Button>();
         door.ResetActivators(activators);
 
-        agent = agentsDistributor.Respawn(1)[0].GetComponent<Agent>();
+        agent = agentsDistributor.Respawn(agentsOnEpisode)[0].GetComponent<Agent>();
     }
 
     public void OnGoalTriggered()
     {
+        agent.SetReward(1f);
         agent.EndEpisode();
         ResetScene();
     }

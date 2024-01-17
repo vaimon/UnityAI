@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+
+using Unity.MLAgents;
+
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,15 +17,19 @@ public class Door : MonoBehaviour
     private DoorActivator[] activators;
 
     private int activeCounter = 0;
+
+    public Agent agent;
     public UnityEvent onDoorOpen;
     
     private void OnActivate()
     {
+        agent.AddReward(0.25f);
         activeCounter++;
         if (activeCounter == activators.Length) Open();
     }
     private void onDeactivate()
     {
+        agent.AddReward(-0.25f);
         activeCounter--;
     }
     public void ResetActivators(DoorActivator[] newActivators)

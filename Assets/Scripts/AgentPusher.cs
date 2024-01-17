@@ -1,6 +1,8 @@
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
+using static UnityEngine.GraphicsBuffer;
+using Unity.MLAgents.Sensors;
 
 public class AgentPusher : Agent
 {
@@ -65,6 +67,8 @@ public class AgentPusher : Agent
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
         MoveAgent(actionBuffers.DiscreteActions);
+
+        AddReward(-0.0001f);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -101,6 +105,7 @@ public class AgentPusher : Agent
 
     public override void OnEpisodeBegin()
     {
+        transform.rotation = Quaternion.identity;
     }
 
 }
