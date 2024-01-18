@@ -2,24 +2,6 @@
     "ButtonChaser": {
         "checkpoints": [
             {
-                "steps": 427502,
-                "file_path": "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-427502.onnx",
-                "reward": null,
-                "creation_time": 1705529091.9491582,
-                "auxillary_file_paths": [
-                    "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-427502.pt"
-                ]
-            },
-            {
-                "steps": 477968,
-                "file_path": "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-477968.onnx",
-                "reward": -0.0897000078111887,
-                "creation_time": 1705529869.9102335,
-                "auxillary_file_paths": [
-                    "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-477968.pt"
-                ]
-            },
-            {
                 "steps": 499664,
                 "file_path": "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-499664.onnx",
                 "reward": -2.3975001126527786,
@@ -45,15 +27,33 @@
                 "auxillary_file_paths": [
                     "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-0.pt"
                 ]
+            },
+            {
+                "steps": 499884,
+                "file_path": "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-499884.onnx",
+                "reward": -0.05500001087784767,
+                "creation_time": 1705531392.4722497,
+                "auxillary_file_paths": [
+                    "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-499884.pt"
+                ]
+            },
+            {
+                "steps": 812052,
+                "file_path": "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-812052.onnx",
+                "reward": null,
+                "creation_time": 1705535888.5995834,
+                "auxillary_file_paths": [
+                    "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-812052.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 0,
+            "steps": 812052,
             "file_path": "results\\chaserAttempt3\\ButtonChaser.onnx",
             "reward": null,
-            "creation_time": 1705531318.071876,
+            "creation_time": 1705535888.5995834,
             "auxillary_file_paths": [
-                "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-0.pt"
+                "results\\chaserAttempt3\\ButtonChaser\\ButtonChaser-812052.pt"
             ]
         }
     },
