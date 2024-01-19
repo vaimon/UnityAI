@@ -11,6 +11,7 @@ TagManager:
   - door
   - button
   - blueAgent
+  - pressedButton
   layers:
   - Default
   - TransparentFX

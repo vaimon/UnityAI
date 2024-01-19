@@ -108,7 +108,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 5f577f7033262cb44a806138acfaa58f, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 8c5c95ba92826ac4d92b0de53a454d34, type: 3}
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: ButtonChaser
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_DetectableTags:
   - wall
   - button
-  - block
+  - pressedButton
   - agent
   m_ColliderMask:
     serializedVersion: 2
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_DebugColors:
   - {r: 1, g: 0, b: 0, a: 0}
   - {r: 0.09066844, g: 1, b: 0, a: 0}
-  - {r: 0, g: 0.23288822, b: 1, a: 0}
+  - {r: 1, g: 0.66284275, b: 0, a: 0}
   - {r: 0, g: 0.23288822, b: 1, a: 0}
   m_GizmoYOffset: 0
   m_ShowGizmos: 1

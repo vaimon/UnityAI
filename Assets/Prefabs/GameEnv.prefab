@@ -225,9 +225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732609a8e3b2a57499f7f4ba4986fe9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonsOnEpisode: 2
+  buttonsOnEpisode: 4
   boxesOnEpisode: 0
-  agentsOnEpisode: 2
+  agentsOnEpisode: 6
   buttonsDistributor: {fileID: 2217175152903168023}
   boxDistributor: {fileID: 3552187568563327776}
   agentsDistributor: {fileID: 1970792111334935124}
